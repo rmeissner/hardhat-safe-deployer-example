@@ -1,5 +1,9 @@
 # Hardhat Safe Deployer Example
 
+This is an example project that uses the Gnosis Safe to deploy a contract.
+
+For the the [hardhat-safe-deployer](https://github.com/rmeissner/hardhat-safe-deployer) plugin is used.
+
 ## Install
 - Run `nvm use` to set correct node version
 - Run `yarn` to install dependencies
