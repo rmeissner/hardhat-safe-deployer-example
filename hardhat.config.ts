@@ -13,7 +13,7 @@ const { INFURA_KEY, MNEMONIC, MNEMONIC_PATH, ETHERSCAN_API_KEY, SAFE_SERVICE_URL
 
 setupSafeDeployer(
   Wallet.fromMnemonic(MNEMONIC!!, MNEMONIC_PATH),
-  DEPLOYER_SAFE,
+  DEPLOYER_SAFE!!,
   SAFE_SERVICE_URL
 )
 
@@ -90,7 +90,7 @@ const userConfig: HardhatUserConfig = {
     },
   },
   namedAccounts: {
-    deployer: DEPLOYER_SAFE,
+    deployer: DEPLOYER_SAFE!!,
   },
   mocha: {
     timeout: 2000000,
