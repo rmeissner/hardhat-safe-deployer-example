@@ -17,3 +17,8 @@ For the the [hardhat-safe-deployer](https://github.com/rmeissner/hardhat-safe-de
 ![image](./assets/safe_interface_example.png)
 - After deployment verify contract on Etherscan with `yarn verify rinkeby`
   - Note: make sure that Etherscan has indexed the transaction already
+
+## Notes on Setup
+
+- The Safe is exposed as a named account called `deployer` via the `hardhat-deploy` plugin (see line 93 of the hardhat config)
+- The `deployer` is used int he deployment task. This will trigger the routing to the Safe web interface (see `deployment_test.ts`)
